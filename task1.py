@@ -75,6 +75,7 @@ Shih-tzu is owned by Christy
 """
 
 
+
 class pet:
     animal = None
     breed = None
@@ -84,11 +85,11 @@ class pet:
 
     def __init__(self):
         print("\n")
-        self.animal = input("Enter the type of animal: ")
-        self.breed = input("Enter the breed: ")
-        self.name = input("Enter the name: ")
-        self.owner = input("Enter the owner: ")
-        self.birthday = input("Enter the birthday: ")
+        self.animal = input("Type of animal? ")
+        self.breed = input("Breed? ")
+        self.name = input("Name? ")
+        self.owner = input("Owner? ")
+        self.birthday = input("Birthdate? ")
 
     def display(self):
         output = str(self.name) + " " + str(self.animal) + " " + str(self.breed) + " is owned by " + str(self.owner)
@@ -119,5 +120,3 @@ def main():
 
 
 main()
-
-            
