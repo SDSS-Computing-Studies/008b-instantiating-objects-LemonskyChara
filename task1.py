@@ -81,7 +81,7 @@ class pet:
     breed = None
     name = None
     owner = None
-    birthday = None
+    day = None
 
     def __init__(self):
         print("\n")
@@ -89,7 +89,7 @@ class pet:
         self.breed = input("Breed? ")
         self.name = input("Name? ")
         self.owner = input("Owner? ")
-        self.birthday = input("Birthdate? ")
+        self.day = input("Birthdate? ")
 
     def display(self):
         output = str(self.name) + " " + str(self.animal) + " " + str(self.breed) + " is owned by " + str(self.owner)
