@@ -98,25 +98,19 @@ class pet:
         print(output)
         print(outputLength * "=")
         
-    
+pets = []
+
 def main():
     quitbool = 0
     while quitbool != 3:
         print("\n1.Enter a new pet\n2.Retrieve a pet\n3.Exit")
         quitbool = int(input(""))
         if quitbool == 1:
-            pets = []
-            for i in range(0,3):
-                pets.append(pet())
+            pets.append(pet())
         elif quitbool == 2:
             namebool = input("Which Pet?")
-            if namebool == pets[0].name:
-                pets[0].display()
-            elif namebool == pets[1].name:
-                pets[1].display()
-            elif namebool == pets[2].name:
-                pets[2].display()
-
-
+            for i in pets:
+                if namebool == i.name:
+                    pet.display(i)
 
 main()
